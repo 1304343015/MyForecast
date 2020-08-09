@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/item_day"
+        style="@style/MainTextStyle"
+        android:text="周三" />
+    <TextView
+        android:id="@+id/item_weather"
+        style="@style/MainTextStyle"
+        android:layout_marginLeft="10dp"
+        android:text="晴"
+        android:layout_toRightOf="@id/item_day"/>
+    <TextView
+        android:id="@+id/item_temp"
+        style="@style/MainTextStyle"
+        android:layout_alignParentRight="true"
+        android:text="31~18℃"/>
+    <ImageView
+        android:id="@+id/item_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toLeftOf="@id/item_temp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/icon"/>
+</RelativeLayout>
